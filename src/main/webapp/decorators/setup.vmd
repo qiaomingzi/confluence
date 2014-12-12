@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE,chrome=IE7">
+    <meta charset="utf-8">
+    <title>$title - Confluence</title>
+    
+    $webResourceManager.requireResourcesForContext("setup")
+    $webResourceManager.getResources()
+    
+    #renderMetadata()
+    #favicon()
+</head>
+<body class="aui-layout aui-theme-default aui-page-focused aui-page-focused-large setup">
+<div id="page">
+    <div id="content" role="main">
+        <div class="aui-page-header">
+            <div class="locale-switcher">
+            ## Display the locale flags (see setuplicence.vm)
+            #if ($sitemeshPage.getProperty("page.localeflags"))
+                <div class="locale-flags">
+                    $sitemeshPage.getProperty("page.localeflags")
+                </div>
+            #end
+            </div>
+            <div class="aui-page-header-inner">
+                <div class="aui-page-header-main">
+                    <a class="logocell-text" href="$req.contextPath/"><img src="$staticResourceUrlPrefix/images/logo/confluence_header.png" alt="Confluence"></a>
+                </div>
+                <div class="aui-page-header-actions">
+                    #parse ("/decorators/includes/setupstep.vm")
+                </div>
+            </div>
+        </div>
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-content">
+                    <h1 class="pageheader">$title</h1>
+                    $body
+                </div>
+            </div>
+        </div>
+    </div>
+    #set ($showHSQLWarning = true)
+    #parse ("/decorators/includes/footer.vm")
+</div>
+</body>
+</html>

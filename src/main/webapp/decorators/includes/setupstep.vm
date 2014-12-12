@@ -1,0 +1,20 @@
+#* @vtlvariable name="setupPersister" type="com.atlassian.confluence.setup.DefaultSetupPersister" *#
+<div id="setup-progress-tracker-container">
+    #set($stepWidth = 100 / $setupPersister.allVisibleSteps.size())
+	<ol id="setup-progress-tracker" class="aui-progress-tracker aui-progress-tracker-inverted">
+	        #foreach ($step in $setupPersister.completedSteps)
+	            #if ($step.value != "invisible")
+	                <li style="width: ${stepWidth}%" class="aui-progress-tracker-step#if($step.key == $setupPersister.currentDisplayStep) aui-progress-tracker-step-current#end">
+	                    <a>$action.getText($step.value)</a>
+	                </li>
+	            #end
+	        #end
+	        #foreach ($step in $setupPersister.uncompletedSteps)
+	            #if ($step.value != "invisible")
+	                <li style="width: ${stepWidth}%" class="aui-progress-tracker-step#if($step.key == $setupPersister.currentDisplayStep) aui-progress-tracker-step-current#end">
+	                    <span>$action.getText($step.value)</span>
+	                </li>
+	            #end
+	        #end
+	</ol>
+</div>

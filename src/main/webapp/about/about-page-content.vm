@@ -1,0 +1,22 @@
+<img class="main-about-confluence-logo" src="$req.contextPath/images/logo/confluence_header.png" alt="$i18n.getText('aboutpage.logo.alt.text')">
+
+<h2>$i18n.getText('aboutpage.header.licensing')</h2>
+
+<p> $i18n.getText('aboutpage.copyright', $copyrightSince, $copyrightUntil)</p>
+
+<p>$i18n.getText('aboutpage.copyright.eua')</p>
+
+<p>$i18n.getText('aboutpage.copyright.apache')</p>
+
+<p>
+    $i18n.getText('aboutpage.copyright.lgpl')
+    #parse ("about/lgpl-libs.vm")
+</p>
+
+<p>$i18n.getText('aboutpage.copyright.other')</p>
+
+<p>$i18n.getText('aboutpage.copyright.additional')</p>
+
+#foreach($panelHtml in $pluginPanels)
+    $panelHtml
+#end

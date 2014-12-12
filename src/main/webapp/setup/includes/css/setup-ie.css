@@ -1,0 +1,21 @@
+/**
+ * These overrides make up for the lack of box-shadow support in IE8. They:
+ *  - add the grey/white box around the dot
+ *  - pull the grey/white bar between the dots 1px closer to the dot so that they actually touch (wouldn't be needed except for webkit's weird rounding of fractional percentages)
+ */
+
+.aui-progress-tracker-step > span:before,
+.aui-progress-tracker-step > a:before {
+    border: 3px solid #f5f5f5;
+    margin-left: -8px;
+    top: 0;
+}
+.aui-progress-tracker-step + .aui-progress-tracker-step > span:after,
+.aui-progress-tracker-step + .aui-progress-tracker-step > a:after {
+    margin-left: -15px;
+    margin-right: 5px;
+}
+.aui-progress-tracker-inverted .aui-progress-tracker-step > span:before,
+.aui-progress-tracker-inverted .aui-progress-tracker-step > a:before {
+    border-color: #fff;
+}

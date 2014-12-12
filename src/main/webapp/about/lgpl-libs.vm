@@ -1,0 +1,29 @@
+
+##Auto-generated. Do not change.
+<ul>
+<li>Atlassian Hibernate 2 Extras (<a href="http://www.atlassian.com/atlassian-public-pom/atlassian-hibernate-extras-parent/atlassian-hibernate2-extras/" target="_blank">com.atlassian.hibernate:atlassian-hibernate2-extras:jar:4.0.3</a>)</li>
+<li>Atlassian JWebUnit Confluence Plugin (<a href="http://www.atlassian.com/atlassian-public-pom/jwebunit-confluence-plugin/" target="_blank">com.atlassian.confluence:jwebunit-confluence-plugin:jar:1.5</a>)</li>
+<li>atlassian-image-consumer (<a href="http://www.atlassian.com/atlassian-public-pom/atlassian-image-consumer/" target="_blank">com.atlassian.image:atlassian-image-consumer:jar:1.0.1</a>)</li>
+<li>c3p0:JDBC DataSources/Resource Pools (<a href="http://c3p0.sourceforge.net" target="_blank">c3p0:c3p0:jar:0.9.1.2</a>)</li>
+<li>Core - API (<a href="http://jwebunit.sourceforge.net/jwebunit-core" target="_blank">net.sourceforge.jwebunit:jwebunit-core:jar:2.3</a>)</li>
+<li>Core - API (<a href="http://jwebunit.sourceforge.net/jwebunit-core" target="_blank">net.sourceforge.jwebunit:jwebunit-core:jar:3.1</a>)</li>
+<li>CSS Parser (<a href="http://cssparser.sourceforge.net/" target="_blank">net.sourceforge.cssparser:cssparser:jar:0.9.5</a>)</li>
+<li>Hibernate 2.1.8 (Atlassian fork) (hibernate:hibernate:jar:2.1.8-atlassian-19)</li>
+<li>HtmlUnit Plugin (<a href="http://jwebunit.sourceforge.net/jwebunit-htmlunit-plugin" target="_blank">net.sourceforge.jwebunit:jwebunit-htmlunit-plugin:jar:2.3</a>)</li>
+<li>HtmlUnit Plugin (<a href="http://jwebunit.sourceforge.net/jwebunit-htmlunit-plugin" target="_blank">net.sourceforge.jwebunit:jwebunit-htmlunit-plugin:jar:3.1</a>)</li>
+<li>Java Native Access Platform (<a href="https://github.com/twall/jna" target="_blank">net.java.dev.jna:platform:jar:3.4.0</a>)</li>
+<li>Java Native Access (net.java.dev.jna:jna:jar:3.2.2)</li>
+<li>Java Native Access (<a href="https://github.com/twall/jna" target="_blank">net.java.dev.jna:jna:jar:3.4.0</a>)</li>
+<li>jcaptcha-all (<a href="http://www.jcaptcha.net/" target="_blank">com.octo.captcha:jcaptcha-all:jar:1.0-RC6</a>)</li>
+<li>jcommon (<a href="http://www.jfree.org/jcommon/" target="_blank">jfree:jcommon:jar:1.0.0</a>)</li>
+<li>jcommon (<a href="http://www.jfree.org/jcommon/" target="_blank">jfree:jcommon:jar:1.0.6</a>)</li>
+<li>jfreechart (<a href="http://www.jfree.org/jfreechart" target="_blank">jfree:jfreechart:jar:1.0.0</a>)</li>
+<li>jfreechart (<a href="http://www.jfree.org/jfreechart/" target="_blank">jfree:jfreechart:jar:1.0.3</a>)</li>
+<li>jsr305 (<a href="http://findbugs.sourceforge.net/" target="_blank">net.sourceforge.findbugs:jsr305:jar:1.3.2</a>)</li>
+<li>jtds (<a href="http://jtds.sourceforge.net" target="_blank">net.sourceforge.jtds:jtds:jar:1.2.2</a>)</li>
+<li>PDF renderer -  Atlassian patched (pdf-renderer:pdf-renderer:jar:1.13-atlassian-2)</li>
+<li>syntaxhighligher (<a href="https://code.google.com/p/syntaxhighlighter/" target="_blank">1.5</a>)</li>
+<li>TinyMCE-TinyMCE (<a href="http://sourceforge.net/projects/tinymce/" target="_blank">3.4.3.2-atlassian-3</a>)</li>
+<li>xhtmlrenderer (org.xhtmlrenderer:xhtmlrenderer:pom:8.4-atlassian)</li>
+<li>xom (<a href="http://www.xom.nu" target="_blank">xom:xom:jar:1.0</a>)</li>
+</ul>

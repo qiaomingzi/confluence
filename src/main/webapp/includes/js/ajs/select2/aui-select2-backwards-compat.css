@@ -1,0 +1,24 @@
+/* The following styles are used to maintain backwards compatibility with
+ * versions with versions of the plugins that still maintain custom CSS overrides
+ * (not yet upgraded to remove these thanks to aui-select2)
+ */
+
+/* These rules override outdated ones from create-content */
+form.aui .select2-container-multi.aui-select2-container .select2-choices {
+    min-height: 0;
+}
+
+form.aui .select2-container-multi.aui-select2-container .select2-choices .select2-search-choice {
+    margin: 1px 5px 1px 0;
+}
+
+/* These rules override AUI defaults from 5.2-m1. Could potentially be removed in an AUI upgrade */
+.aui-select2-container.select2-container.select2-dropdown-open .select2-choice,
+.aui-select2-container.select2-container.select2-dropdown-open .select2-choices {
+    padding-bottom: 0;
+}
+.aui-select2-container.select2-container.select2-dropdown-open.select2-drop-above .select2-choice,
+.aui-select2-container.select2-container.select2-dropdown-open.select2-drop-above .select2-choices {
+    padding-bottom: 0;
+    padding-top: 0;
+}

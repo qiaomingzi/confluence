@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>$action.getActionName()</title>
+        <content tag="no-page-header">true</content>
+    </head>
+
+    <body>
+
+    #set($fileName = $webwork.htmlEncode($action.getAttachmentBean().getFileName()))
+    #set($version = $webwork.htmlEncode($action.getAttachmentBean().getVersion()))
+    
+    #applyDecorator("root")
+        #decoratorParam("helper" $action.helper)
+        #decoratorParam("mode" "edit")
+        #decoratorParam("context" "page")
+
+        #applyDecorator ("confirm")
+            #decoratorParam ("formName" "removeattachmentversionform")
+            #decoratorParam ("formAction" "removeattachmentversion.action?pageId=$webwork.htmlEncode($page.id)&fileName=$fileName&version=$version")
+            
+            <div style="color: #666666; width: 70%" align="left">$i18n.getText('remove.attachment.version.confirmation.message', [$version, $fileName])</div>
+
+        #end
+
+        #parse ( "/pages/page-breadcrumbs.vm" )
+    #end
+
+    </body>
+</html>
